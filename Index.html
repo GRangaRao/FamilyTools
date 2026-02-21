@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Family Tools – Life Admin & Nearby Places</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --primary: #1b73e8;
+      --primary-dark: #1558ad;
+      --bg: #f5f7fb;
+      --text: #222;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e1e4ee;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 18px;
+      margin: 0;
+    }
+    nav a {
+      margin-left: 12px;
+      font-size: 14px;
+      text-decoration: none;
+      color: var(--text);
+    }
+    nav a:hover {
+      color: var(--primary);
+    }
+    .hero {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      max-width: 640px;
+      margin: 0 auto 20px auto;
+      font-size: 15px;
+      color: #444;
+    }
+    .hero .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .hero .btn:hover {
+      background: var(--primary-dark);
+    }
+    .hero small {
+      display: block;
+      margin-top: 8px;
+      font-size: 12px;
+      color: #666;
+    }
+    .section {
+      padding: 30px 20px;
+    }
+    .section h3 {
+      font-size: 20px;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+    .section p.section-intro {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 20px auto;
+      font-size: 14px;
+      color: #555;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+    }
+    .card h4 {
+      margin: 0 0 6px 0;
+      font-size: 16px;
+    }
+    .pill {
+      display: inline-block;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3740a0;
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: 13px;
+      margin: 0 0 8px 0;
+      color: #444;
+    }
+    .card ul {
+      margin: 0;
+      padding-left: 16px;
+      font-size: 13px;
+      color: #444;
+    }
+    .card ul li {
+      margin-bottom: 4px;
+    }
+    .plan-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #777;
+      margin-bottom: 4px;
+    }
+    .cta-row {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 13px;
+    }
+    .cta-row a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .cta-row a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      padding: 16px 20px;
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Family Tools</h1>
+    <nav>
+      <a href="#life-admin">Life admin helper</a>
+      <a href="#kids-around">What’s around for kids</a>
+      <a href="#nearby-places">Nearby places finder</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Make family life easier in a new city</h2>
+    <p>
+      Three simple browser tools to help you organise immigration paperwork,
+      discover kid‑friendly places, and find everyday amenities around you.
+    </p>
+    <a href="#life-admin" class="btn">Explore the tools</a>
+    <small>Works in Chrome and other Chromium browsers.</small>
+  </section>
+
+  <section class="section" id="life-admin">
+    <h3>Life Admin Helper</h3>
+    <p class="section-intro">
+      A guided checklist for newcomers: PPS, GP, schools, immigration, tax and
+      more, all in one place.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <div class="plan-label">Free plan</div>
+        <span class="pill">New to the country?</span>
+        <h4>Start with one city</h4>
+        <p>
+          Follow curated checklists and links for a single city so you can
+          complete the basics without feeling lost.
+        </p>
+        <ul>
+          <li>One country and one city profile.</li>
+          <li>Pre‑built tasks for PPS, GP, schools, tax and more.</li>
+          <li>Click‑through links to official government websites.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="plan-label">Pro plan</div>
+        <span class="pill">For families & relocations</span>
+        <h4>Track every step, together</h4>
+        <p>
+          Upgrade when you want to save progress, add your own tasks and share
+          checklists across your family devices.
+        </p>
+        <ul>
+          <li>Multiple countries and cities for repeat moves.</li>
+          <li>Progress saved and synced across browsers.</li>
+          <li>Custom tasks, notes and PDF export for your records.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a href="#">Install Life Admin Helper extension</a>
+    </div>
+  </section>
+
+  <section class="section" id="kids-around">
+    <h3>What’s Around for Kids</h3>
+    <p class="section-intro">
+      Quickly see playgrounds, parks, libraries and clubs near your child’s
+      school or home.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <div class="plan-label">Free plan</div>
+        <span class="pill">Quick discovery</span>
+        <h4>One place, core categories</h4>
+        <p>
+          Pick a single location and see a few key categories so you can get a
+          feel for your new area.
+        </p>
+        <ul>
+          <li>One saved location (home or school).</li>
+          <li>Playgrounds, parks, libraries and sports centres.</li>
+          <li>Links to open in Maps with one click.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="plan-label">Pro plan</div>
+        <span class="pill">For busy parents</span>
+        <h4>Multiple places, notes and alerts</h4>
+        <p>
+          Save all your important places and keep notes so you remember which
+          activities your kids liked.
+        </p>
+        <ul>
+          <li>Multiple saved locations (home, school, grandparents).</li>
+          <li>Notes and simple visit history for each place.</li>
+          <li>Optional alerts when new activities appear nearby.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a href="#">Install What’s Around for Kids extension</a>
+    </div>
+  </section>
+
+  <section class="section" id="nearby-places">
+    <h3>Nearby Places Finder</h3>
+    <p class="section-intro">
+      A simple finder for restaurants, groceries, taxis, sports centres and
+      more, powered by OpenStreetMap data.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <div class="plan-label">Free plan</div>
+        <span class="pill">Everyday essentials</span>
+        <h4>Search from your current location</h4>
+        <p>
+          Tick the amenities you care about and get a clean list of the closest
+          options around you.
+        </p>
+        <ul>
+          <li>Restaurants, groceries, taxis, schools and more.</li>
+          <li>Distance and address at a glance.</li>
+          <li>Open in Google Maps or visit the website.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="plan-label">Pro plan</div>
+        <span class="pill">Power users</span>
+        <h4>Saved searches and favourites</h4>
+        <p>
+          For heavier use, save favourite places and reuse your common searches
+          without re‑selecting options.
+        </p>
+        <ul>
+          <li>Saved favourite places and quick access.</li>
+          <li>Reusable search presets for common tasks.</li>
+          <li>Sync across your signed‑in browsers.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a href="#">Install Nearby Places Finder extension</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Family Tools. Browser extensions for newcomers and parents.
+  </footer>
+</body>
+</html>
